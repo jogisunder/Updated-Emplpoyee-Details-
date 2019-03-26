@@ -1,0 +1,19 @@
+public interface Employ {
+
+    String setEmpDetails();
+
+    String getEmpName(String s);
+
+    String getEmpId(String s);
+
+    String getEmpEmail(String s);
+
+    int getEmpPhone(String s);
+
+    int getEmpSalary(String s);
+
+    int getEmpDob(String s);
+
+    EmpDetails RemoveEmp(String s);
+
+}
