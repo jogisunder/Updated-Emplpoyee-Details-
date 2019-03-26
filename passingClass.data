@@ -1,0 +1,42 @@
+import jdk.swing.interop.SwingInterOpUtils;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class passingClass {
+   Map<String,EmpDetails >  map ;
+   passingClass(){
+
+       map = new HashMap<String, EmpDetails>();
+   }
+
+   void loadData() {
+    EmpDetails sunder = new EmpDetails("sunder","Abc123",12000,"hemasunder@gmail.com",123456789,16061995);
+    EmpDetails hema = new EmpDetails("hema","Abc123",12000,"hemasunder@gmail.com",123456789,16061995);
+    EmpDetails jogi = new EmpDetails("jogi","Abc123",12000,"hemasunder@gmail.com",123456789,16061995);
+    EmpDetails sudakhar = new EmpDetails("sudkhar","Abc123",12000,"hemasunder@gmail.com",123456789,16061993);
+    EmpDetails surendra = new EmpDetails("surendra","Abc123",12000,"hemasunder@gmail.com",123456789,16061993);
+
+    map.put("sunder", sunder);
+    map.put("hema",hema);
+    map.put("jogi",jogi);
+    map.put("sudakhar",sudakhar);
+    map.put("surendra",surendra);
+
+   }
+
+
+  EmpDetails  getEmpdetails(String EmpName){
+      EmpDetails EmpDetails=null;
+      EmpDetails = map.get(EmpName);
+       return EmpDetails;
+
+}
+EmpDetails Remove(String empName){
+       EmpDetails EmpDetails = null;
+       EmpDetails = map.remove(empName);
+       return EmpDetails;
+}
+
+
+}
