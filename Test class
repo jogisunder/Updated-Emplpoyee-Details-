@@ -1,0 +1,16 @@
+public class testclass {
+    public static void main(String[] args) {
+
+       Employ p = new EmpImplimantato();
+
+
+        System.out.println(p.getEmpId("sunder"));
+        System.out.println(p.getEmpEmail("sunder"));
+        System.out.println(p.getEmpPhone("sunder"));
+        System.out.println(p.getEmpSalary("sunder"));
+        System.out.println(p.getEmpDob("sunder"));
+        System.out.println(p.RemoveEmp("sunder"));
+
+
+    }
+}
