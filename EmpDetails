@@ -1,0 +1,59 @@
+public class EmpDetails{
+
+    private  String  EmpName ;
+    private String  EmpId ;
+    private int EmpSalary ;
+    private String  EmpEmail ;
+    private int EmpPhone ;
+    private int EmpDob;
+
+      public EmpDetails(String EmpName, String EmpId, Integer EmpSalary, String EmpEmail, Integer EmpPhone, Integer EmpDob){
+
+           this.EmpName = EmpName;
+           this.EmpId = EmpId;
+           this.EmpSalary = EmpSalary;
+           this.EmpEmail = EmpEmail;
+           this.EmpPhone = EmpPhone;
+           this.EmpDob = EmpDob;
+
+     }
+
+     public Integer getEmpDob() { return EmpDob; }
+     public Integer getEmpPhone() { return EmpPhone; }
+     public String getEmpName()
+    {
+        return EmpName;
+    }
+    public Integer getEmpSalary()
+    {
+        return EmpSalary;
+    }
+    public String getEmpEmail() {
+        return EmpEmail;
+    }
+    public String getEmpId() { return EmpId; }
+
+
+
+
+     public void setEmpEmail(String empEmail) {
+         this.EmpEmail = empEmail;
+     }
+     public void setEmpId(String empId) {
+         this.EmpId = empId;
+     }
+     public void setEmpName(String empName) {
+       this.EmpName = empName;
+    }
+     public void setEmpDob(int empDob) {
+      this.EmpDob = empDob;
+    }
+     public void setEmpPhone(int empPhone) {
+          this.EmpPhone = empPhone;
+        }
+        public void setEmpSalary(int empSalary) {
+              this.EmpSalary = empSalary;
+          }
+
+
+}
