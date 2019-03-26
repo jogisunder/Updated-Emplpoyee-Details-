@@ -1,0 +1,49 @@
+     public  class EmpImplimantato implements Employ {
+
+     private passingClass Emp ;
+   public EmpImplimantato(){
+         Emp = new passingClass();
+         Emp.loadData();
+   }
+
+         @Override
+         public String setEmpDetails() {
+        return null;
+         }
+
+         @Override
+         public String getEmpName(String EmpName) {
+             return Emp.getEmpdetails(EmpName).getEmpName();
+         }
+
+         @Override
+         public String getEmpId(String EmpName) {
+             return Emp.getEmpdetails(EmpName).getEmpId();
+         }
+
+         @Override
+         public String getEmpEmail(String EmpName) {
+             return Emp.getEmpdetails(EmpName).getEmpEmail();
+         }
+
+         @Override
+         public int getEmpPhone(String EmpName) {
+             return Emp.getEmpdetails(EmpName).getEmpPhone();
+         }
+
+         @Override
+         public int getEmpSalary(String EmpName) {
+             return Emp.getEmpdetails(EmpName).getEmpSalary();
+         }
+
+         @Override
+         public int getEmpDob(String EmpName) {
+             return Emp.getEmpdetails(EmpName).getEmpDob();
+         }
+
+
+
+         public EmpDetails RemoveEmp(String EmpName) {
+             return null;
+         }
+     }
